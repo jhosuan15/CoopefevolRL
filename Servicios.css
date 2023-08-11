@@ -209,7 +209,7 @@ header {
     margin: 50px;
     border-radius: 5px;
     max-width: 400px;
-    height: 400px;
+    min-height: 500px;
     color: #0041C2;
 }
 
