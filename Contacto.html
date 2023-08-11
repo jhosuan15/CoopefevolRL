@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>COOPEFEVOL</title>
+    <link rel="stylesheet" media="all" href="Contacto.css" />
+    <link rel="icon" href="community.png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+      <link rel="icon" href="community.png">
+</head>
+
+  <body>
+    <header>
+        <a href="Inicio.html" class="logo"></i><span>COOPEFEVOL</span></a>
+
+        <ul class="navbar">
+            <li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="Nosotros.html">Nosotros</a></li>
+            <li><a href="Servicios.html">Servicios</a></li>
+            <li><a href="Horario.html">Horario</a></li>
+            <li><a href="Integrantes.html">Integrantes</a></li>
+            <li><a href="Contacto.html">Contactanos</a></li>
+            <li><a href="galeria.html" class="active">Galería</a></li>
+        </ul>
+        <div class="main">
+            <a href="https://www.facebook.com/coopefevolrl.ctpfvj"> <img class="icons" src="facebook (1).png"
+                    alt=""></a>
+            <a href="https://www.instagram.com/coopefevol/"> <img class="icons" style="margin-right: 10px;"
+                    src="instagram (4).png" alt=""></a>
+            <div class="bx bx-menu" style="margin-left:10px;" id="menu-icon"></div>
+        </div>
+    </header>
+  
+
+    <div class="informacion3" style="background-color: #E3F2FD;margin-top: 100px;">
+      <h1 style="text-align: center;">CONSULTAS</h1>
+      <form action="https://formsubmit.co/coopefevolrl@gmail.com" method="POST">
+        <input class="form " type="text" name="Nombre" value="Nombre">
+        <input class="form " type="text" name="Numero" value="Numero">
+        <input class="form " type="text" name="Mensaje" value="Mensaje">
+        <br><input class="send" type="submit">
+      </form>
+      <br><br><br>
+      <div class="informacion info2">
+        <img src="phone.png" style="height: 50px; width: 50px;" alt=""><br><br>
+        <b class="titulo2">TELEFONO</b>
+        <p>+506 6381 8377</p>
+      </div>
+      <div class="informacion info2">
+        <img src="email.png" style="height: 50px; width: 50px;" alt=""><br><br>
+        <b class="titulo2">EMAIL</b>
+        <p>coopefevolrl@gmail.com</p>
+      </div>
+      <div style="border-bottom: 0px;" class="informacionWhatsapp info2">
+        <img src="whatsapp.png" style="height: 50px; width: 50px;" alt=""><br><br>
+        <b class="tituloWhatsapp" style="color: #90A4AE;">ENVIANOS UN</b><br>
+        <b><a style="color: #2BB540;" id="whatsapp-button">WHATSAPP</a></b>
+      </div>
+  
+    </div>
+
+
+    <footer>
+        <div class="footer">
+            <p style="color: white;">COOPEFEVOL</p>
+            <p style="color: white;">&copy; 2023 HACKMIND</p>
+        </div>
+    </footer>
+    <!--js link--->
+    <script type="text/javascript">
+        let menu = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('open');
+        }</script>
+    <script>
+      document.getElementById("whatsapp-button").addEventListener("click", function () {
+        var phoneNumber = "+50663818377"; // Reemplaza esto con tu número de teléfono (incluido el código de país).
+        var message = "Hola, quiero saber como asociarme."; // Mensaje predefinido opcional.
+
+        // Crea el enlace de WhatsApp
+        var whatsappLink = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodeURIComponent(message);
+
+        // Abre el enlace en una nueva ventana o pestaña.
+        window.open(whatsappLink, "_blank");
+      });
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        },
+        slidesPerView: 1,
+        spaceBetween: 10,
+        // init: false,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+
+
+        breakpoints: {
+          620: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          680: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          920: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1240: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        }
+      });
+    </script>
+
+  </body>
+
+</html>
