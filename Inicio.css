@@ -155,6 +155,9 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
+      /* Rota la imagen 90 grados en sentido antihorario (horizontal) */
+  transform: rotate(-270deg);
+  transform-origin: center center; /* Establece el punto de origen de la rotación en el centro */
 
 }
 
