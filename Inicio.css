@@ -149,15 +149,15 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
-    background-image: url('Fondo.png');
+    height: 900px;
+    background-image: url('Fondo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    width: 100%;
       /* Rota la imagen 90 grados en sentido antihorario (horizontal) */
-  transform: rotate(-90deg);
+  transform: rotate(-360deg);
   transform-origin: center center; /* Establece el punto de origen de la rotación en el centro */
+    width: 100%;
 
 }
 
